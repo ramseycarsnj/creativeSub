@@ -2,95 +2,112 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ramsey Creative Requests</title>
+    <title>Ramsey Creative - Web Requests</title>
     <script src="jquery.min.js" charset="utf-8"></script>
     <script src="master.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/subPage.css">
     <style media="screen">
       @media (max-width: 700px) {
-        iframe {width: 600px; height: 1040px;}
+        .yes {width: 600px; height: 5540px;}
+        .no {width: 600px; height: 5540px;}
       }
       @media (max-width: 600px){
-        iframe {width: 400px;height: 1020px;}
+        .yes {width: 400px;height: 5580px;}
+        .no {width: 400px;height: 5520px;}
       }
     </style>
   </head>
   <body>
     <div id="loader"></div>
-    <nav  id="desktopNav">
-      <div id="headerImage">
-        <a href="index.html"><img src="inc/ragLogo.png" alt="RAG Creative Logo"></a>
-      </div>
-      <div id="hamburger">
-        <div id="inactive"><img src="inc/navicon.png" alt="mobile nav">&nbsp;</div>
-        <div id="active">X</div>
-      </div>
-      <ul id="desktopMenu">
-        <li>
-          <a href="photo.html">
-            PHOTOGRAPHY
-          </a>
-        </li>
-        <li>
-          <a class="activeLink" href="web.html">
-            WEBSITE
-          </a>
-        </li>
-        <li>
-          <a href="video.html">
-            VIDEOGRAPHY
-          </a>
-        </li>
-        <li>
-          <a href="email.html">
-            EMAIL CAMPAIGN
-          </a>
-        </li>
-      </ul>
-      <ul id="mobileMenu">
-        <li>
-          <a href="photo.html">
-            PHOTOGRAPHY
-          </a>
-        </li>
-        <li>
-          <a class="activeLink" href="web.html">
-            WEBSITE
-          </a>
-        </li>
-        <li>
-          <a href="video.html">
-            VIDEOGRAPHY
-          </a>
-        </li>
-        <li>
-          <a href="email.html">
-            EMAIL CAMPAIGN
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div id="wrapper">
+      <div id="content">
+        <nav  id="desktopNav">
+          <div id="headerImage">
+            <a href="index.html"><img src="inc/ragLogo.png" alt="RAG Creative Logo"></a>
+          </div>
+          <div id="hamburger">
+            <div id="inactive"><img src="inc/navicon.png" alt="mobile nav">&nbsp;</div>
+            <div id="active">X</div>
+          </div>
+          <ul id="desktopMenu">
+            <li>
+              <a href="photo.html">
+                PHOTOGRAPHY
+              </a>
+            </li>
+            <li>
+              <a class="activeLink" href="web.html">
+                WEBSITE
+              </a>
+            </li>
+            <li>
+              <a href="video.html">
+                VIDEOGRAPHY
+              </a>
+            </li>
+            <li>
+              <a href="email.html">
+                EMAIL CAMPAIGN
+              </a>
+            </li>
+          </ul>
+          <ul id="mobileMenu">
+            <li>
+              <a href="photo.html">
+                PHOTOGRAPHY
+              </a>
+            </li>
+            <li>
+              <a class="activeLink" href="web.html">
+                WEBSITE
+              </a>
+            </li>
+            <li>
+              <a href="video.html">
+                VIDEOGRAPHY
+              </a>
+            </li>
+            <li>
+              <a href="email.html">
+                EMAIL CAMPAIGN
+              </a>
+            </li>
+          </ul>
+        </nav>
 
 
 
-    <div id="headingText">
-    <p>
-      RAG CREATIVE WEBSITE REQUEST FORM
-    </p>
+        <div id="headingText">
+        <p>
+          RAG CREATIVE WEBSITE REQUEST FORM
+        </p>
+        </div>
+
+
+        <div id="question">
+          <h1>Is this for a vehicle special?</h1>
+
+          <button id="yes" type="button" name="button">Yes</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="no" type="button" name="button">No</button>
+
+        </div>
+
+          <iframe  class="yes" src="https://docs.google.com/forms/d/e/1FAIpQLSea5MC3ma2pQ8gEy0HgDqQ8l8ChEg2PPuzGVK254ix8TsuDyg/viewform?embedded=true" width="650" height="5540" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+          <iframe class="no" src="https://docs.google.com/forms/d/e/1FAIpQLSczpCwX12ToVDdsIEgurr0Cdvgu5bniVK2rh4orSz1YK8vhTg/viewform?embedded=true" width="650" height="1025" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
     </div>
+        <footer>
+          <p>
+            Please keep in mind that the <a href="contact.html" alt="contact">Creative Department</a> serves all dealerships of RAG. Please allow sufficient time for response.
 
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczpCwX12ToVDdsIEgurr0Cdvgu5bniVK2rh4orSz1YK8vhTg/viewform?embedded=true" width="650" height="1025" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
-    <footer>
-      <p>
-        Please keep in mind that the <span>Creative Department</span> serves all dealerships of RAG. Please allow sufficient time for response.
-
-        <br>
+            <br>
 
 
-        <span class="version">RAGF v1.0.0</span>
-      </p>
-    </footer>
+            <span class="version">RAGF v1.0.0</span>
+          </p>
+        </footer>
+    </div>
     <script type="text/javascript">
       function adjustStyle(width) {
         width = parseInt(width);

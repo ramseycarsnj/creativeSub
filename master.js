@@ -17,18 +17,18 @@ $(document).ready(function() {
     console.log('I work');
   });
 
-  $('.videoEvent').hide();
-  $('.videoCom').hide();
+  $('.yes').hide();
+  $('.no').hide();
 
   $('#yes').click(function(){
     $('#question').hide();
-    $('.videoEvent').fadeIn();
+    $('.yes').fadeIn();
     console.log('I work');
   });
 
   $('#no').click(function(){
     $('#question').hide();
-    $('.videoCom').fadeIn();
+    $('.no').fadeIn();
     console.log('I work');
   });
 

@@ -2,18 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ramsey Creative - Photo Requests</title>
+    <title>Ramsey Creative -  Contact</title>
     <script src="jquery.min.js" charset="utf-8"></script>
     <script src="master.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/subPage.css">
-    <style media="screen">
-    @media (max-width: 700px) {
-      iframe {width: 600px; height: 1765px;}
-    }
-    @media (max-width: 600px){
-      iframe {width: 400px;height: 1795px;}
-    }
-    </style>
+      <style media="screen">
+
+      @media (max-width: 700px) {
+        iframe {width: 600px; height: 1620px;}
+      }
+      @media (max-width: 600px){
+        iframe {width: 400px;height: 1615px;}
+      }
+
+      </style>
 
   </head>
   <body>
@@ -30,7 +32,7 @@
           </div>
           <ul id="desktopMenu">
             <li>
-              <a class="activeLink" href="photo.html">
+              <a href="photo.html">
                 PHOTOGRAPHY
               </a>
             </li>
@@ -52,7 +54,7 @@
           </ul>
           <ul id="mobileMenu">
             <li>
-              <a class="activeLink" href="photo.html">
+              <a href="photo.html">
                 PHOTOGRAPHY
               </a>
             </li>
@@ -75,45 +77,53 @@
         </nav>
 
 
-
-        <div id="headingText">
-        <p>
-          RAG CREATIVE PHOTO REQUEST FORM
-        </p>
+        <div id="contact">
+          <h1>Contact us</h1>
+          <ul>
+            <li>
+              phone: <a href="tel:2018254444">201.825.4444</a> <span>x 5930</span>
+            </li>
+            <li>
+              email: <a href="mailto:creative@ramseycars.com">creative@ramseycars.com</a>
+            </li>
+          </ul>
         </div>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdtSWrH8UtJNivXM4KXnCUk-0Wzrsip0eHCHs2CVUGTsKHDZA/viewform?embedded=true" width="650" height="1745" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
       </div>
-        <footer>
-          <p>
-            Please keep in mind that the <span>Creative Department</span> serves all dealerships of RAG. Please allow sufficient time for response.
-            <br>
 
 
-            <span class="version">RAGF v1.0.0</span>
-          </p>
 
-        </footer>
+
+
+      <footer>
+        <p>
+          Please keep in mind that the <span>Creative Department</span> serves all dealerships of RAG. Please allow sufficient time for response.
+
+          <br>
+
+          <span class="version">RAGF v1.0.0</span>
+        </p>
+      </footer>
+
     </div>
 
+<script type="text/javascript">
+  function adjustStyle(width) {
+    width = parseInt(width);
+    if (width > 900) {
+        $("nav").css("height", "63px");
+    } else if (width < 900 && width > 575) {
+        $("nav").css("height", "98px");
+    } else if (width < 575) {
+        $("nav").css("height", "70px");
+    }
+  }
 
-    <script type="text/javascript">
-      function adjustStyle(width) {
-        width = parseInt(width);
-        if (width > 900) {
-            $("nav").css("height", "63px");
-        } else if (width < 900 && width > 575) {
-            $("nav").css("height", "98px");
-        } else if (width < 575) {
-            $("nav").css("height", "70px");
-        }
-      }
-
-      $(function() {
+  $(function() {
+    adjustStyle($(this).width());
+    $(window).resize(function() {
         adjustStyle($(this).width());
-        $(window).resize(function() {
-            adjustStyle($(this).width());
-        });
-      });
-    </script>
+    });
+  });
+</script>
   </body>
 </html>
