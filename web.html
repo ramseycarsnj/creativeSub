@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/subPage.css">
     <style media="screen">
       @media (max-width: 700px) {
-        .yes {width: 600px; height: 5540px;}
-        .no {width: 600px; height: 5540px;}
+        .lease {width: 600px; height: 5850px;}
+        .finance {width: 600px; height: 1310px;}
+        .no {width: 600px; height: 1040px;}
       }
       @media (max-width: 600px){
-        .yes {width: 400px;height: 5580px;}
-        .no {width: 400px;height: 5520px;}
+        .lease {width: 400px;height: 5900px;}
+        .finance {width: 400px;height: 1320px;}
+        .no {width: 400px;height: 1020px;}
       }
     </style>
   </head>
@@ -91,7 +93,18 @@
 
         </div>
 
-          <iframe  class="yes" src="https://docs.google.com/forms/d/e/1FAIpQLSea5MC3ma2pQ8gEy0HgDqQ8l8ChEg2PPuzGVK254ix8TsuDyg/viewform?embedded=true" width="650" height="5540" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+        <div class="yes" id="question2">
+          <h1>Is this a lease special?</h1>
+
+          <button id="lease" type="button" name="button">Yes</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="finance" type="button" name="button">No</button>
+
+        </div>
+
+
+          <iframe class="lease" src="https://docs.google.com/forms/d/e/1FAIpQLSea5MC3ma2pQ8gEy0HgDqQ8l8ChEg2PPuzGVK254ix8TsuDyg/viewform?embedded=true" width="650" height="5830" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+          <iframe class="finance" src="https://docs.google.com/forms/d/e/1FAIpQLScbQv-LGZjSG7EUYkaKSYHR83EPBwjeQ6tnq5Lc14-Z8Il7uA/viewform?embedded=true" width="650" height="1315" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
           <iframe class="no" src="https://docs.google.com/forms/d/e/1FAIpQLSczpCwX12ToVDdsIEgurr0Cdvgu5bniVK2rh4orSz1YK8vhTg/viewform?embedded=true" width="650" height="1025" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>

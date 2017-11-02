@@ -19,10 +19,24 @@ $(document).ready(function() {
 
   $('.yes').hide();
   $('.no').hide();
+  $('.lease').hide();
+  $('.finance').hide();
 
   $('#yes').click(function(){
     $('#question').hide();
     $('.yes').fadeIn();
+    console.log('I work');
+  });
+
+  $('#finance').click(function(){
+    $('#question2').hide();
+    $('.finance').fadeIn();
+    console.log('I work');
+  });
+
+  $('#lease').click(function(){
+    $('#question2').hide();
+    $('.lease').fadeIn();
     console.log('I work');
   });
 
