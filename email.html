@@ -9,10 +9,10 @@
       <style media="screen">
 
       @media (max-width: 700px) {
-        iframe {width: 600px; height: 1540px;}
+        iframe {width: 600px; height: 1620px;}
       }
       @media (max-width: 600px){
-        iframe {width: 400px;}
+        iframe {width: 400px;height: 1615px;}
       }
 
       </style>
@@ -45,7 +45,7 @@
           </a>
         </li>
         <li>
-          <a href="email.html">
+          <a class="activeLink" href="email.html">
             EMAIL CAMPAIGN
           </a>
         </li>
@@ -67,7 +67,7 @@
           </a>
         </li>
         <li>
-          <a href="email.html">
+          <a class="activeLink" href="email.html">
             EMAIL CAMPAIGN
           </a>
         </li>
@@ -82,16 +82,38 @@
     </p>
     </div>
 
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfB1vYUB8upbdYHMfss4XDm2r61n-mVHkQGpIWAADfkd2qTNQ/viewform?embedded=true" width="650" height="1500" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfB1vYUB8upbdYHMfss4XDm2r61n-mVHkQGpIWAADfkd2qTNQ/viewform?embedded=true" width="650" height="1585" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
     <footer>
       <p>
         Please keep in mind that the <span>Creative Department</span> serves all dealerships of RAG. Please allow sufficient time for response.
+
+        <br>
+
+        <span class="version">RAGF v1.0.0</span>
       </p>
     </footer>
 
 
+<script type="text/javascript">
+  function adjustStyle(width) {
+    width = parseInt(width);
+    if (width > 900) {
+        $("nav").css("height", "63px");
+    } else if (width < 900 && width > 575) {
+        $("nav").css("height", "98px");
+    } else if (width < 575) {
+        $("nav").css("height", "70px");
+    }
+  }
 
+  $(function() {
+    adjustStyle($(this).width());
+    $(window).resize(function() {
+        adjustStyle($(this).width());
+    });
+  });
+</script>
   </body>
 </html>

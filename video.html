@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/subPage.css">
     <style media="screen">
     @media (max-width: 700px) {
-      .videoEvent {width: 600px; height: 1360px;}
+      .videoEvent {width: 600px; height: 1600px;}
       .videoCom {width: 600px; height: 1245px;}
     }
     @media (max-width: 600px){
-      .videoEvent {width: 400px;height: 1350px;}
-      .videoCom {width: 400px;height: 1250px;}
+      .videoEvent {width: 400px;height: 1580px;}
+      .videoCom {width: 400px;height: 1320px;}
     }
 
     </style>
@@ -40,7 +40,7 @@
           </a>
         </li>
         <li>
-          <a href="video.html">
+          <a class="activeLink" href="video.html">
             VIDEOGRAPHY
           </a>
         </li>
@@ -62,7 +62,7 @@
           </a>
         </li>
         <li>
-          <a href="video.html">
+          <a class="activeLink" href="video.html">
             VIDEOGRAPHY
           </a>
         </li>
@@ -87,18 +87,39 @@
 
       <button id="yes" type="button" name="button">Yes</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="no" type="button" name="button">No</button>
     </div>
-      <iframe  class="videoEvent" src="https://docs.google.com/forms/d/e/1FAIpQLSe68JEZughTIVHVAyTBtNZOMgRs2zjvWVG--s2NeiiWlNfvmQ/viewform?embedded=true" width="650" height="1345" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <iframe  class="videoEvent" src="https://docs.google.com/forms/d/e/1FAIpQLSe68JEZughTIVHVAyTBtNZOMgRs2zjvWVG--s2NeiiWlNfvmQ/viewform?embedded=true" width="650" height="1585" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
-      <iframe  class="videoCom" src="https://docs.google.com/forms/d/e/1FAIpQLSdA2ZHGI-hJslEyb42mKPBws6uKHfWmNzlP42uDUQ8DZrjYlA/viewform?embedded=true" width="650" height="1220" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <iframe  class="videoCom" src="https://docs.google.com/forms/d/e/1FAIpQLSdA2ZHGI-hJslEyb42mKPBws6uKHfWmNzlP42uDUQ8DZrjYlA/viewform?embedded=true" width="650" height="1300" scrolling="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
     <footer>
       <p>
         Please keep in mind that the <span>Creative Department</span> serves all dealerships of RAG. Please allow sufficient time for response.
+        <br>
+
+
+        <span class="version">RAGF v1.0.0</span>
       </p>
     </footer>
 
+    <script type="text/javascript">
+      function adjustStyle(width) {
+        width = parseInt(width);
+        if (width > 900) {
+            $("nav").css("height", "63px");
+        } else if (width < 900 && width > 575) {
+            $("nav").css("height", "98px");
+        } else if (width < 575) {
+            $("nav").css("height", "70px");
+        }
+      }
 
-
+      $(function() {
+        adjustStyle($(this).width());
+        $(window).resize(function() {
+            adjustStyle($(this).width());
+        });
+      });
+    </script>
   </body>
 </html>

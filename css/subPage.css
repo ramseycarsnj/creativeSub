@@ -18,6 +18,10 @@ body {
   height: 100vh;
   background-color: #212121; }
 
+.version {
+  font-size: 10px;
+  color: #4b4a4a; }
+
 #loader {
   padding: 0;
   margin: 0;
@@ -108,6 +112,9 @@ footer {
     background-color: #1586D1;
     cursor: pointer; }
 
+.activeLink {
+  color: #1586D1; }
+
 @media (max-width: 900px) {
   #headerImage {
     text-align: center;
@@ -120,7 +127,8 @@ footer {
     background-color: #1b1919;
     border: 0;
     padding: 0px 0 0 0;
-    vertical-align: middle; }
+    vertical-align: middle;
+    height: 98px; }
     nav ul {
       vertical-align: text-top;
       display: block;
