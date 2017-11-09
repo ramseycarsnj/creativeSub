@@ -276,13 +276,27 @@ footer {
     width: 100vw; }
     nav ul {
       position: absolute;
-      width: 100%;
       display: inline;
       text-align: right;
       padding: 0;
-      margin: 60px 0 0 -10%; }
+      margin: 60px 0 0 85px;
+      width: 120px;
+      padding: 0; }
       nav ul li {
         display: block;
         text-align: right;
         margin: 10px 0;
-        width: 53%; } }
+        width: 53%;
+        font-size: 14px; } }
+
+#yes {
+  background-color: #fff; }
+
+#no {
+  background-color: #fff; }
+
+#lease {
+  background-color: #fff; }
+
+#finance {
+  background-color: #fff; }
