@@ -9,13 +9,18 @@ $(document).ready(function() {
     $('#active').show();
     console.log('I work');
   });
-  $('#active').click(function(){
+
+  function mobileMenuClose() {
     $('nav').css('height', '70px');
     $('#mobileMenu').hide();
     $('#active').hide();
     $('#inactive').show();
     console.log('I work');
+  }
+  $('#active').click(function(){
+    mobileMenuClose();
   });
+
 
   $('.yes').hide();
   $('.no').hide();
@@ -48,4 +53,5 @@ $(document).ready(function() {
 
 
   $('.freebirdFormviewerViewFormBanner').css('display', 'none');
+  
 });

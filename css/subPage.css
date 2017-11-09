@@ -173,98 +173,110 @@ footer {
 .activeLink {
   color: #1586D1; }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   html {
     height: 100vh; }
-    html #question h1 {
-      font-size: 25px; }
-    html #headerImage {
-      text-align: center;
-      display: inline-block;
-      padding: 10px 0 0 0;
-      height: 60px;
-      text-decoration: none;
+  #question h1 {
+    font-size: 25px; }
+    #question h1 button {
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      padding: 20px 30px;
+      font-size: 20px;
+      width: 150px;
+      font-weight: 700;
+      color: #212121;
+      transition: color .1s, background-color .3s;
       cursor: pointer; }
-    html nav {
-      background-color: #1b1919;
-      border: 0;
-      padding: 0px 0 0 0;
-      vertical-align: middle;
-      height: 98px; }
-      html nav ul {
-        vertical-align: text-top;
-        display: block;
-        list-style: none;
-        margin: 0px auto 0px auto;
-        padding: 0 0 10px 0;
-        border: 0;
-        text-align: center; }
-        html nav ul li {
-          vertical-align: text-top;
-          padding: 0;
-          border: 0;
-          display: inline;
-          margin: 0 15px 0 15px;
-          width: 100px; }
-          html nav ul li a {
-            padding: 0;
-            margin: 0;
-            text-decoration: none;
-            display: inline-block;
-            color: #ffffff;
-            transition: color .3s; }
-          html nav ul li a:hover {
-            color: #1586D1; }
-    html footer {
-      font-size: 12px; }
-      html footer p {
-        width: 80%;
-        margin: 0 auto; } }
-  @media only screen and (max-width: 900px) and (max-width: 575px) {
-    html #desktopMenu {
-      display: none; }
-    html #headerImage {
-      text-align: left;
-      display: inline-block;
-      padding: 10px 0 0 0;
-      height: 60px;
-      text-decoration: none;
-      cursor: pointer;
-      position: absolute;
-      left: 20px; }
-    html #hamburger {
+  #headerImage {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0 0 0;
+    height: 60px;
+    text-decoration: none;
+    cursor: pointer; }
+  nav {
+    background-color: #1b1919;
+    border: 0;
+    padding: 0px 0 0 0;
+    vertical-align: middle;
+    height: 98px; }
+    nav ul {
       vertical-align: text-top;
-      display: inline-block;
+      display: block;
       list-style: none;
+      margin: 0px auto 0px auto;
+      padding: 0 0 10px 0;
       border: 0;
-      text-align: right;
-      position: absolute;
-      right: 40px;
-      top: 25px; }
-    html #active {
-      display: none;
-      padding: 10px;
-      margin: -10px 0 0 0; }
-    html #inactive img {
-      width: 16px;
-      padding: 0 0 0 5px;
-      margin: 0 0 0 0; }
-    html nav {
-      background-color: #1b1919;
-      border: 0;
-      padding: 0px 0 0 0;
-      vertical-align: middle;
-      height: 70px;
-      transition: height .3s; }
-      html nav ul {
-        position: absolute;
-        width: 100%;
-        display: inline;
-        text-align: right;
+      text-align: center; }
+      nav ul li {
+        vertical-align: text-top;
         padding: 0;
-        margin: 60px 0 0 -10%; }
-        html nav ul li {
-          display: block;
-          text-align: right;
-          margin: 10px 0;
-          width: 53%; } }
+        border: 0;
+        display: inline;
+        margin: 0 15px 0 15px;
+        width: 100px; }
+        nav ul li a {
+          padding: 0;
+          margin: 0;
+          text-decoration: none;
+          display: inline-block;
+          color: #ffffff;
+          transition: color .3s; }
+        nav ul li a:hover {
+          color: #1586D1; }
+  footer {
+    font-size: 12px; }
+    footer p {
+      width: 80%;
+      margin: 0 auto; } }
+
+@media only screen and (max-width: 575px) {
+  #desktopMenu {
+    display: none; }
+  #headerImage {
+    text-align: left;
+    display: inline-block;
+    padding: 10px 0 0 0;
+    height: 60px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; }
+  #hamburger {
+    vertical-align: text-top;
+    display: inline-block;
+    list-style: none;
+    border: 0;
+    text-align: right;
+    position: absolute;
+    right: 40px;
+    top: 25px; }
+  #active {
+    display: none;
+    padding: 10px;
+    margin: -10px 0 0 0; }
+  #inactive img {
+    width: 16px;
+    padding: 0 0 0 5px;
+    margin: 0 0 0 0; }
+  nav {
+    background-color: #1b1919;
+    border: 0;
+    padding: 0px 0 0 0;
+    vertical-align: middle;
+    height: 70px;
+    transition: height .3s; }
+    nav ul {
+      position: absolute;
+      width: 100%;
+      display: inline;
+      text-align: right;
+      padding: 0;
+      margin: 60px 0 0 -10%; }
+      nav ul li {
+        display: block;
+        text-align: right;
+        margin: 10px 0;
+        width: 53%; } }

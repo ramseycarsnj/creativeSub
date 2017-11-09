@@ -160,13 +160,23 @@ footer
     outline: 0
 .activeLink
   color: #1586D1
-@media (max-width: 900px)
-
- html
-  height: 100vh
+@media only screen and  (max-width: 900px)
+  html
+    height: 100vh
   #question
     h1
       font-size: 25px
+      button
+        border: 0
+        margin: 0
+        border-radius: 0
+        padding: 20px 30px
+        font-size: 20px
+        width: 150px
+        font-weight: 700
+        color: #212121
+        transition: color .1s, background-color .3s
+        cursor: pointer
   #headerImage
     text-align: center
     display: inline-block
@@ -210,53 +220,52 @@ footer
     p
       width: 80%
       margin: 0 auto
-  @media only screen and (max-width: 575px)
-
-    #desktopMenu
-      display: none
-    #headerImage
-      text-align: left
-      display: inline-block
-      padding: 10px 0 0 0
-      height: 60px
-      text-decoration: none
-      cursor: pointer
+@media only screen and (max-width: 575px)
+  #desktopMenu
+    display: none
+  #headerImage
+    text-align: left
+    display: inline-block
+    padding: 10px 0 0 0
+    height: 60px
+    text-decoration: none
+    cursor: pointer
+    position: absolute
+    left: 20px
+  #hamburger
+    vertical-align: text-top
+    display: inline-block
+    list-style: none
+    border: 0
+    text-align: right
+    position: absolute
+    right: 40px
+    top: 25px
+  #active
+    display: none
+    padding: 10px
+    margin: -10px 0 0 0
+  #inactive
+    img
+      width: 16px
+      padding: 0 0 0 5px
+      margin: 0 0 0 0
+  nav
+    background-color: #1b1919
+    border: 0
+    padding: 0px 0 0 0
+    vertical-align: middle
+    height: 70px
+    transition: height .3s
+    ul
       position: absolute
-      left: 20px
-    #hamburger
-      vertical-align: text-top
-      display: inline-block
-      list-style: none
-      border: 0
+      width: 100%
+      display: inline
       text-align: right
-      position: absolute
-      right: 40px
-      top: 25px
-    #active
-      display: none
-      padding: 10px
-      margin: -10px 0 0 0
-    #inactive
-      img
-        width: 16px
-        padding: 0 0 0 5px
-        margin: 0 0 0 0
-    nav
-      background-color: #1b1919
-      border: 0
-      padding: 0px 0 0 0
-      vertical-align: middle
-      height: 70px
-      transition: height .3s
-      ul
-        position: absolute
-        width: 100%
-        display: inline
+      padding: 0
+      margin: 60px 0 0 -10%
+      li
+        display: block
         text-align: right
-        padding: 0
-        margin: 60px 0 0 -10%
-        li
-          display: block
-          text-align: right
-          margin: 10px 0
-          width: 53%
+        margin: 10px 0
+        width: 53%

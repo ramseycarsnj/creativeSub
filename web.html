@@ -123,10 +123,14 @@
     <script type="text/javascript">
       function adjustStyle(width) {
         width = parseInt(width);
-        if (width > 900) {
+        if (width >= 900) {
+            $('#mobileMenu').hide();
             $("nav").css("height", "63px");
-        } else if (width < 900 && width > 575) {
+
+        } else if (width < 900 && width >= 575) {
+            $('#mobileMenu').hide();
             $("nav").css("height", "98px");
+
         } else if (width < 575) {
             $("nav").css("height", "70px");
         }
@@ -138,6 +142,7 @@
             adjustStyle($(this).width());
         });
       });
+
     </script>
   </body>
 </html>

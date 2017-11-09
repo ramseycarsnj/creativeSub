@@ -97,24 +97,29 @@
       </p>
     </footer>
   </div>
-<script type="text/javascript">
-  function adjustStyle(width) {
-    width = parseInt(width);
-    if (width > 900) {
-        $("nav").css("height", "63px");
-    } else if (width < 900 && width > 575) {
-        $("nav").css("height", "98px");
-    } else if (width < 575) {
-        $("nav").css("height", "70px");
-    }
-  }
+  <script type="text/javascript">
+    function adjustStyle(width) {
+      width = parseInt(width);
+      if (width >= 900) {
+          $('#mobileMenu').hide();
+          $("nav").css("height", "63px");
 
-  $(function() {
-    adjustStyle($(this).width());
-    $(window).resize(function() {
-        adjustStyle($(this).width());
+      } else if (width < 900 && width >= 575) {
+          $('#mobileMenu').hide();
+          $("nav").css("height", "98px");
+
+      } else if (width < 575) {
+          $("nav").css("height", "70px");
+      }
+    }
+
+    $(function() {
+      adjustStyle($(this).width());
+      $(window).resize(function() {
+          adjustStyle($(this).width());
+      });
     });
-  });
-</script>
+
+  </script>
   </body>
 </html>
