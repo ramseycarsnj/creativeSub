@@ -8,21 +8,33 @@
     <script src="master.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/subPage.css">
       <style media="screen">
-      iframe {
+      .yes {
         width: 650px;
-        height: 1745px;
+        height: 1945px;
+      }
+      .no {
+        width: 650px;
+        height: 1270px;
       }
       @media (max-width: 700px) {
-        iframe {
+        .yes {
           width: 600px;
-          height: 1765px;
+          height: 1965px;
+        }
+        .no {
+          width: 600px;
+          height: 1310px;
         }
       }
 
       @media (max-width: 600px) {
-        iframe {
+        .yes {
           width: 400px;
-          height: 1755px;
+          height: 1975px;
+        }
+        .no {
+          width: 400px;
+          height: 1290px;
         }
       }
       </style>
@@ -94,7 +106,17 @@
       </p>
       </div>
 
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfB1vYUB8upbdYHMfss4XDm2r61n-mVHkQGpIWAADfkd2qTNQ/viewform?embedded=true" width="650" height="1585" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+      <div id="question">
+        <h1>Do you need a Blast or Template?</h1>
+
+        <button id="yes" type="button" name="button">Blast</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="no" type="button" name="button">Template</button>
+      </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfB1vYUB8upbdYHMfss4XDm2r61n-mVHkQGpIWAADfkd2qTNQ/viewform?embedded=true" class="yes" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcYlEJUPVv6DEh4dmgX7JebcxmyYwmIZ_ES-il9VcGiPlAUw/viewform?embedded=true" class="no" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+
 
   </div>
     <footer>
