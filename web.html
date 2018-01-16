@@ -11,14 +11,18 @@
     .lease {
       width: 650px;
       height: 6170px;
-    }
+    }''
     .finance {
       width: 650px;
       height: 1550px;
     }
-    .no {
+    .web {
       width: 650px;
       height: 1170px;
+    }
+    .other {
+      width: 650px;
+      height: 1000px;
     }
     @media (max-width: 700px) {
       .lease {
@@ -29,7 +33,11 @@
         width: 600px;
         height: 1600px;
       }
-      .no {
+      .web {
+        width: 600px;
+        height: 1190px;
+      }
+      .other {
         width: 600px;
         height: 1190px;
       }
@@ -44,9 +52,13 @@
         width: 400px;
         height: 1590px;
       }
-      .no {
+      .web {
         width: 400px;
-        height: 1180px;
+        height: 1000px;
+      }
+      .other {
+        width: 400px;
+        height: 1000px;
       }
     }
     </style>
@@ -119,27 +131,20 @@
 
 
         <div id="question">
-          <h1>Is this for a vehicle special?</h1>
-
-          <button id="yes" type="button" name="button">Yes</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="no" type="button" name="button">No</button>
-
+          <h1>Please select what you need added to the website</h1>
+          <button id="web" type="button" name="button">Content</button>
+          <button id="lease" type="button" name="button">Lease</button>
+          <button id="finance" type="button" name="button">Finance</button>
+          <button id="other" type="button" name="button">Other</button>
         </div>
-
-
-        <div class="yes" id="question2">
-          <h1>Is this a lease special?</h1>
-
-          <button id="lease" type="button" name="button">Yes</button>&nbsp;&nbsp;&nbsp;&nbsp;<button id="finance" type="button" name="button">No</button>
-
-        </div>
-
 
           <iframe class="lease" src="https://docs.google.com/forms/d/e/1FAIpQLSea5MC3ma2pQ8gEy0HgDqQ8l8ChEg2PPuzGVK254ix8TsuDyg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
           <iframe class="finance" src="https://docs.google.com/forms/d/e/1FAIpQLScbQv-LGZjSG7EUYkaKSYHR83EPBwjeQ6tnq5Lc14-Z8Il7uA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
+          <iframe class="web" src="https://docs.google.com/forms/d/e/1FAIpQLSczpCwX12ToVDdsIEgurr0Cdvgu5bniVK2rh4orSz1YK8vhTg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
-          <iframe class="no" src="https://docs.google.com/forms/d/e/1FAIpQLSczpCwX12ToVDdsIEgurr0Cdvgu5bniVK2rh4orSz1YK8vhTg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          <iframe class="other" src="https://docs.google.com/forms/d/e/1FAIpQLSe3S0-GjsnQAl2KvAWSZOzLhCt8HTxq9XMMuPl7U33p7GdPLA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
     </div>
       <footer>

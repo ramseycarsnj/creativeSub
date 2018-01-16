@@ -23,9 +23,10 @@ $(document).ready(function() {
 
 
   $('.yes').hide();
-  $('.no').hide();
+  $('.web').hide();
   $('.lease').hide();
   $('.finance').hide();
+  $('.other').hide();
 
   $('#yes').click(function(){
     $('#question').hide();
@@ -34,20 +35,25 @@ $(document).ready(function() {
   });
 
   $('#finance').click(function(){
-    $('#question2').hide();
+    $('#question').hide();
     $('.finance').fadeIn();
     console.log('I work');
   });
 
   $('#lease').click(function(){
-    $('#question2').hide();
+    $('#question').hide();
     $('.lease').fadeIn();
     console.log('I work');
   });
 
-  $('#no').click(function(){
+  $('#web').click(function(){
     $('#question').hide();
-    $('.no').fadeIn();
+    $('.web').fadeIn();
+    console.log('I work');
+  });
+  $('#other').click(function(){
+    $('#question').hide();
+    $('.other').fadeIn();
     console.log('I work');
   });
 
