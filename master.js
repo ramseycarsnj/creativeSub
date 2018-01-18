@@ -56,6 +56,11 @@ $(document).ready(function() {
     $('.other').fadeIn();
     console.log('I work');
   });
+  $('#no').click(function(){
+    $('#question').hide();
+    $('.no').fadeIn();
+    console.log('I work');
+  });
 
 
   $('.freebirdFormviewerViewFormBanner').css('display', 'none');
